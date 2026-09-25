@@ -1,0 +1,148 @@
+
+/* Body */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7ff;
+}
+
+
+/* Navbar */
+
+.navbar-brand {
+    font-size: 22px;
+}
+
+.nav-link {
+    margin-left: 15px;
+}
+
+
+/* Hero Section */
+
+.hero {
+    background-color: #111b3e;
+    color: white;
+    padding: 80px 0;
+}
+
+
+/* Hero Heading */
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+
+/* Hero Paragraph */
+
+.hero p {
+    font-size: 18px;
+    color: #d5daf0;
+    margin-bottom: 25px;
+}
+
+
+/* Space Area */
+
+.space {
+    position: relative;
+    height: 300px;
+    padding-top: 60px;
+}
+
+
+/* Planet */
+
+.planet {
+    font-size: 120px;
+}
+
+
+/* Rocket */
+
+.rocket {
+    font-size: 55px;
+    position: absolute;
+    top: 30px;
+    right: 60px;
+}
+
+
+/* Star */
+
+.star {
+    font-size: 35px;
+    position: absolute;
+    bottom: 40px;
+    left: 60px;
+}
+
+
+/* About Cards */
+
+.card {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Card Heading */
+
+.card h3 {
+    font-size: 22px;
+}
+
+
+/* Missions */
+
+.missions {
+    background-color: #e9edff;
+}
+
+
+/* Mission Cards */
+
+.mission-card {
+    height: 100%;
+    transition: 0.3s;
+}
+
+
+/* Card Hover */
+
+.mission-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Contact */
+
+#contact {
+    background-color: white;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 20px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .space {
+        margin-top: 30px;
+    }
+
+}
+

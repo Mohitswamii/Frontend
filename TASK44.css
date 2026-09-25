@@ -1,0 +1,470 @@
+
+/* ================================
+   GLOBAL STYLING
+================================ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #070b1a;
+    color: white;
+}
+
+
+/* ================================
+   NAVBAR
+================================ */
+
+.custom-navbar {
+    background: rgba(5, 8, 25, 0.95);
+    border-bottom: 1px solid #202849;
+    padding: 15px 0;
+}
+
+.navbar-brand {
+    letter-spacing: 2px;
+    color: #ffffff !important;
+}
+
+.nav-link {
+    color: #bfc7e8 !important;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    color: #7c8cff !important;
+}
+
+
+/* ================================
+   HERO SECTION
+================================ */
+
+.hero-section {
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background:
+        radial-gradient(circle at 80% 40%, #24205c 0%, transparent 30%),
+        radial-gradient(circle at 20% 20%, #101d4d 0%, transparent 25%),
+        #070b1a;
+}
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+.small-title {
+    color: #8794ff;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+    font-weight: 800;
+    line-height: 1.05;
+    margin: 20px 0;
+}
+
+.hero-content h1 span {
+    display: block;
+    color: #8794ff;
+}
+
+.hero-text {
+    color: #aeb6d1;
+    font-size: 18px;
+    line-height: 1.7;
+    max-width: 520px;
+}
+
+
+/* ================================
+   HERO BUTTONS
+================================ */
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.explore-btn {
+    background: #6978ff;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 30px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.explore-btn:hover {
+    background: #5363ed;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.learn-btn {
+    border: 1px solid #6978ff;
+    color: #ffffff;
+    padding: 13px 25px;
+    border-radius: 30px;
+}
+
+.learn-btn:hover {
+    background: #6978ff;
+    color: white;
+}
+
+
+/* ================================
+   SPACE VISUAL
+================================ */
+
+.space-visual {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
+
+.planet-big {
+    position: absolute;
+    top: 120px;
+    left: 125px;
+    font-size: 125px;
+    z-index: 2;
+    animation: floating 4s ease-in-out infinite;
+}
+
+.orbit {
+    position: absolute;
+    border: 1px solid #5662a5;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.orbit-one {
+    width: 300px;
+    height: 150px;
+    transform: translate(-50%, -50%) rotate(25deg);
+}
+
+.orbit-two {
+    width: 350px;
+    height: 190px;
+    transform: translate(-50%, -50%) rotate(-25deg);
+}
+
+.floating-astronaut {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    font-size: 50px;
+    animation: astronautFloat 5s ease-in-out infinite;
+}
+
+.space-star {
+    position: absolute;
+    color: #ffffff;
+    font-size: 25px;
+}
+
+.star-1 {
+    left: 20px;
+    top: 100px;
+}
+
+.star-2 {
+    right: 30px;
+    bottom: 100px;
+}
+
+.star-3 {
+    left: 70px;
+    bottom: 50px;
+}
+
+
+/* ================================
+   ANIMATIONS
+================================ */
+
+@keyframes floating {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes astronautFloat {
+
+    0%,
+    100% {
+        transform: translate(0, 0) rotate(5deg);
+    }
+
+    50% {
+        transform: translate(10px, -20px) rotate(-5deg);
+    }
+}
+
+
+/* ================================
+   DISCOVER SECTION
+================================ */
+
+.discover-section {
+    padding: 100px 0;
+    background: #0b1024;
+}
+
+.section-heading p {
+    color: #7f8cff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.section-heading span {
+    color: #9099b8;
+}
+
+
+/* ================================
+   INFO CARDS
+================================ */
+
+.info-card {
+    height: 100%;
+    padding: 35px;
+    background: #111832;
+    border: 1px solid #222c50;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    transform: translateY(-10px);
+    border-color: #707eff;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.icon-box {
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.info-card h3 {
+    font-size: 23px;
+}
+
+.info-card p {
+    color: #929bb9;
+    line-height: 1.7;
+}
+
+.info-card a {
+    color: #8290ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* ================================
+   MISSIONS
+================================ */
+
+.mission-section {
+    padding: 100px 0;
+    background: #070b1a;
+}
+
+.mission-card {
+    position: relative;
+    height: 100%;
+    padding: 35px;
+    background: linear-gradient(
+        145deg,
+        #121a38,
+        #0d1229
+    );
+    border: 1px solid #252e51;
+    border-radius: 18px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.mission-card:hover {
+    transform: scale(1.03);
+    border-color: #7885ff;
+}
+
+.mission-number {
+    font-size: 50px;
+    font-weight: bold;
+    color: #252d55;
+}
+
+.mission-card h3 {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.mission-card p {
+    color: #9da6c1;
+    line-height: 1.7;
+}
+
+.mission-status {
+    margin-top: 25px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #7f8cff;
+    letter-spacing: 2px;
+}
+
+
+/* ================================
+   CONTACT
+================================ */
+
+.contact-section {
+    padding: 90px 0;
+    background: #0b1024;
+}
+
+.contact-box {
+    padding: 60px 20px;
+    border: 1px solid #283258;
+    border-radius: 25px;
+    background:
+        radial-gradient(
+            circle at center,
+            #171e46,
+            #0c1128
+        );
+}
+
+.contact-box p:first-child {
+    color: #7f8cff;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.contact-box h2 {
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+.contact-box p {
+    color: #a1a9c3;
+}
+
+.contact-btn {
+    margin-top: 20px;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 30px;
+    background: #6978ff;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background: #5363ed;
+    transform: translateY(-3px);
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+    padding: 40px 0;
+    background: #040611;
+    border-top: 1px solid #1c2340;
+}
+
+footer h5 {
+    letter-spacing: 3px;
+}
+
+footer p {
+    color: #7e879f;
+    margin: 10px 0;
+}
+
+footer small {
+    color: #555d76;
+}
+
+
+/* ================================
+   RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 768px) {
+
+    .hero-content {
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 43px;
+    }
+
+    .hero-text {
+        margin: auto;
+    }
+
+    .space-visual {
+        width: 300px;
+        height: 300px;
+        margin-top: 50px;
+    }
+
+    .planet-big {
+        left: 90px;
+        top: 90px;
+        font-size: 100px;
+    }
+
+    .orbit-one {
+        width: 240px;
+    }
+
+    .orbit-two {
+        width: 280px;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .contact-box h2 {
+        font-size: 30px;
+    }
+}
+
